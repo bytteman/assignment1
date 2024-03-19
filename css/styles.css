@@ -5,7 +5,15 @@ html {
 
 h1, h2 {
     font-variant: small-caps;
-    color: darkblue;
+
+}
+
+h1 {
+    color: #eee;
+}
+
+h2 {
+    color: #010c32;
 }
 
 figcaption {
@@ -25,7 +33,9 @@ footer p {
 }
 
 header, footer {
-    background: linear-gradient(rgb(255, 0, 0), rgb(255, 253, 68));
+    /*background: linear-gradient(rgb(255, 0, 0), rgb(255, 253, 68));*/
+    background: linear-gradient(80deg, #8445eb, #ed5d63);
+    color: #eee;
 }
 
 body {
@@ -37,9 +47,9 @@ body {
 
 video {
     width: 60%;
-    padding: 1rem;
-    border: 2px solid rgb(0, 0, 255);
-    border-radius: 5rem;
+    /*padding: 1rem;*/
+    /*border: 2px solid rgb(0, 0, 255);*/
+    border-radius: 2rem;
     border: 1rem solid #FF0;
 }
 
@@ -50,14 +60,14 @@ header, footer {
 
 .main-section {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .main-section img {
     width: 80%;
     height: auto;
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: 0.1rem;
+    border-radius: 10rem;
 }
 
 .main-section-figure {
@@ -66,12 +76,12 @@ header, footer {
 }
 
 .main-section-figure {
-    padding: 1rem;
+    padding: 0.2rem;
     margin: 2rem auto;
     text-align: center;
 }
 
-.main-section {
+main {
     background-color: hsla(10, 100%, 95%, 0.8);
 }
 
@@ -80,14 +90,14 @@ header, footer {
 }
 
 #quote q {
-    padding: 0.5rem;
-    border: 2px solid #F00;
+    padding: 0.2rem;
+    border: 1px solid #F00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #relative-path-image {
     border: 2px solid rgb(0, 128, 0);
-    border-radius: 5rem;
+    border-radius: 1rem;
     background-color: hsla(75, 100%, 70%, 0.8);
 }
 
@@ -97,10 +107,186 @@ header, footer {
     background-color: hsla(12, 60%, 70%, 0.5);
 }
 
-#relative-path-image+figcaption {
+#relative-path-image + figcaption {
     color: rgb(0, 128, 0);
 }
 
-#absolute-path-image+figcaption {
+#absolute-path-image + figcaption {
     color: rgb(255, 0, 0);
+}
+
+/* For Assignment 2 */
+nav {
+    background: #6d39f9;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: calc(30% - 2rem);
+}
+
+footer {
+    clear: both;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 0.3rem;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: inline;
+    float: left;
+    width: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6d39f9;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 100%;
+    display: block;
+    border: 1px solid #e7e1f3;
+    background: white;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+nav ul li a:hover {
+    background: #6d39f9;
+    color: white;
+    border: 1px solid white;
+}
+
+#bio-section {
+    float: left;
+    width: calc(50% - 2rem);
+}
+
+#image-section {
+    float: right;
+    width: calc(50% - 2rem);
+}
+
+#quote-section {
+    clear: both;
+}
+
+aside {
+    padding: 1rem;
+}
+
+aside h3 {
+    font-variant: small-caps;
+    color: #6d39f9;
+    text-align: center;
+    padding: 0;
+    margin: 1rem;
+}
+
+aside table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+aside th {
+    font-variant: small-caps;
+    color: #2770bb;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+aside th, td {
+    font-style: italic;
+    font-variant: small-caps;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed #DDD;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+aside a {
+    text-decoration: none;
+    color: #010c32;
+    line-height: 2;
+}
+
+aside a:hover {
+    color: #52b90c;
+}
+
+#contact-section h2 {
+    font-variant: small-caps;
+    color: #0074D9;
+    text-align: center;
+}
+
+#contact-section form {
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #0074D9;
+    border-radius: 1rem;
+    background-color: #fbf8ff;
+}
+
+#contact-section form label {
+    font-variant: small-caps;
+    color: #010d31;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+#contact-section form label[for="subscribe"] {
+    display: inline;
+}
+
+#contact-section form input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 2px solid #0074D9;
+    border-radius: 0.5rem;
+    background-color: #0074D9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#country, #contact-section form input[type="text"], #contact-section form input[type="email"], #contact-section form input[type="date"], #contact-section form textarea {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 2px solid #0074D9;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+#country {
+    width: 100%;
 }
