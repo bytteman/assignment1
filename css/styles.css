@@ -11,8 +11,8 @@ h1 {
     color: #eee;
 }
 
-h2 {
-    color: #010c32;
+h2, h3 {
+    color: #010d31;
 }
 
 figcaption {
@@ -194,7 +194,6 @@ aside {
 
 aside h3 {
     font-variant: small-caps;
-    color: #6d39f9;
     text-align: center;
     padding: 0;
     margin: 1rem;
@@ -231,7 +230,7 @@ aside ul {
 
 aside a {
     text-decoration: none;
-    color: #010c32;
+    color: #6449f3;
     line-height: 2;
 }
 
@@ -241,8 +240,8 @@ aside a:hover {
 
 #contact-section h2 {
     font-variant: small-caps;
-    color: #0074D9;
     text-align: center;
+    padding: 0.5rem 0;
 }
 
 #contact-section form {
