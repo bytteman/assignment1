@@ -4,7 +4,8 @@ html {
     font: normal normal 400 20px/1.5 Arial, sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-variant: small-caps;
 }
 
@@ -50,7 +51,8 @@ video {
     border-radius: 5rem;
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     border: 1px solid #000000;
 }
@@ -90,19 +92,21 @@ video {
     border: 1rem solid #FF0;
 }
 
-#relative-path-image + figcaption {
+#relative-path-image+figcaption {
     color: rgb(0, 128, 0);
 }
 
-#absolute-path-image + figcaption {
+#absolute-path-image+figcaption {
     color: rgb(255, 0, 0);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: darkblue;
 }
 
-header, footer {
+header,
+footer {
     background: linear-gradient(rgb(255, 0, 0), rgb(255, 253, 68));
 }
 
