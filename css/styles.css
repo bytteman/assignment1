@@ -1,12 +1,11 @@
 /* Haiyan Yuan 8891084 */
-
 html {
     font: normal normal 400 20px/1.5 Arial, sans-serif;
 }
 
-h1,
-h2 {
+h1, h2 {
     font-variant: small-caps;
+    color: darkblue;
 }
 
 figcaption {
@@ -25,11 +24,33 @@ footer p {
     font-size: 0.8rem;
 }
 
+header, footer {
+    background: linear-gradient(rgb(255, 0, 0), rgb(255, 253, 68));
+}
+
 body {
     width: 80%;
     max-width: 1200px;
     padding: 2rem;
     margin: 0 auto;
+}
+
+video {
+    width: 60%;
+    padding: 1rem;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 5rem;
+    border: 1rem solid #FF0;
+}
+
+header, footer {
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.main-section {
+    text-align: center;
+    padding: 2rem;
 }
 
 .main-section img {
@@ -44,32 +65,18 @@ body {
     height: 30%;
 }
 
-video {
-    width: 60%;
-    padding: 1rem;
-    border: 2px solid rgb(0, 0, 255);
-    border-radius: 5rem;
-}
-
-header,
-footer {
-    text-align: center;
-    border: 1px solid #000000;
-}
-
-.main-section {
-    text-align: center;
-    padding: 2rem;
-}
-
-#bio {
-    text-align: left;
-}
-
 .main-section-figure {
     padding: 1rem;
     margin: 2rem auto;
     text-align: center;
+}
+
+.main-section {
+    background-color: hsla(10, 100%, 95%, 0.8);
+}
+
+#bio {
+    text-align: left;
 }
 
 #quote q {
@@ -81,15 +88,13 @@ footer {
 #relative-path-image {
     border: 2px solid rgb(0, 128, 0);
     border-radius: 5rem;
+    background-color: hsla(75, 100%, 70%, 0.8);
 }
 
 #absolute-path-image {
     border: 2px solid rgb(255, 0, 0);
     border-radius: 5rem;
-}
-
-video {
-    border: 1rem solid #FF0;
+    background-color: hsla(12, 60%, 70%, 0.5);
 }
 
 #relative-path-image+figcaption {
@@ -98,26 +103,4 @@ video {
 
 #absolute-path-image+figcaption {
     color: rgb(255, 0, 0);
-}
-
-h1,
-h2 {
-    color: darkblue;
-}
-
-header,
-footer {
-    background: linear-gradient(rgb(255, 0, 0), rgb(255, 253, 68));
-}
-
-.main-section {
-    background-color: hsla(10, 100%, 95%, 0.8);
-}
-
-#absolute-path-image {
-    background-color: hsla(12, 60%, 70%, 0.5);
-}
-
-#relative-path-image {
-    background-color: hsla(75, 100%, 70%, 0.8);
 }
