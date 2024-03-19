@@ -74,49 +74,43 @@
       <li><a href="https://www.facebook.com/aitana_lopez">Facebook</a></li>
     </ul>
   </aside>
-  <section class="main-section">
-    <h2>Biography</h2>
-    <blockquote id="bio">
-      <p>
-        <strong>Aitana Lopez</strong> is not your typical model. She is an <i>AI influencer</i>, a digital persona
-        created by computer-generated imagery (CGI) technology. She has a realistic appearance, a unique style, and a
-        captivating personality. She
-        posts photos and videos of herself on various social media platforms, where she has millions of fans and
-        followers. She also collaborates with fashion brands and designers, showcasing their products and trends.
-        Aitana Lopez is more than just a virtual model. She is a symbol of innovation, diversity, and creativity in
-        the modeling world.
-      </p>
-    </blockquote>
-  </section>
-  <section class="main-section">
-    <h2>Images</h2>
-    <figure class="main-section-figure" id="relative-path-image">
-      <img src="images/aitana_lopez_01.jpg" alt="Aitana Lopez - super look">
-      <figcaption>Aitana Lopez - super look</figcaption>
-    </figure>
-    <!-- <figure class="main-section-figure" id="absolute-path-image">
-      <img src="https://pbs.twimg.com/media/GCIfCyUXkAAfR_M?format=jpg&name=medium"
-     alt="Aitana Lopez - Let it Snow">
-      <figcaption>Aitana Lopez - Let it Snow</figcaption>
-    </figure> -->
-  </section>
-  <section class="main-section">
-    <h2>Quote</h2>
-    <blockquote id="quote" cite="https://www.theclueless.ai/">
-      <p>
-        <q>The Clueless</q> is an AI modeling agency that carefully curates thoughtful,
-        long-lasting models that beautifully represent diverse personalities.
-      </p>
-      <cite>- <a href="https://www.theclueless.ai/">The Clueless, 09/19/2023</a></cite>
-    </blockquote>
-  </section>
-  <section class="main-section">
-    <h2>Media</h2>
-    <video controls poster="images/aitana_lopez_02.jpg" aria-label="Aitana Lopez Introduction Video" role="button"
-           title="Click to play or pause the video">
-      <source src="media/aitana_lopez_02.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section>
+    <h2>Contact</h2>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+      </div>
+      <div>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#64c4fc">
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="USA">USA</option>
+          <option value="Canada" selected>Canada</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+      <div>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+      </div>
+      <div>
+        <label for="subscribe">Subscribe to our newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
   </section>
 </main>
 <footer>
