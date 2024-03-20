@@ -316,6 +316,10 @@ aside a:hover {
         float: none;
     }
 
+    aside ul {
+        text-align: center;
+    }
+
     main {
         padding-bottom: 1rem;
     }
@@ -351,6 +355,10 @@ aside a:hover {
     aside table {
         font-size: 0.8rem;
         width: 100%;
+    }
+
+    aside ul {
+        text-align: center;
     }
 
     #bio-section, #image-section {
