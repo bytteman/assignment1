@@ -29,6 +29,7 @@ q {
 
 footer p {
     font-size: 0.8rem;
+    color: black;
 }
 
 header, footer {
@@ -278,7 +279,7 @@ aside a:hover {
     cursor: pointer;
 }
 
-#country, #contact-section form input[type="text"], #contact-section form input[type="email"], #contact-section form input[type="date"], #contact-section form textarea {
+#country, #contact-section form input[type="text"], #contact-section form input[type="email"], #contact-section form textarea {
     width: calc(100% - 1rem);
     padding: 0.5rem;
     margin: 0.5rem 0;
@@ -289,4 +290,81 @@ aside a:hover {
 
 #country {
     width: 100%;
+    background-color: white;
+}
+
+/* Tablet styles (up to 768px) */
+@media screen and (max-width:768px) {
+    body {
+        width: 100%;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    nav {
+        width: auto;
+        float: none;
+    }
+
+    main {
+        width: auto;
+        float: none;
+    }
+
+    aside {
+        width: auto;
+        float: none;
+    }
+
+    main {
+        padding-bottom: 1rem;
+    }
+
+    #bio-section, #image-section {
+        float: none;
+        width: auto;
+    }
+
+}
+
+/* Mobile styles (up to 480px) */
+@media screen and (max-width:480px) {
+    body {
+        width: 100%;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    nav, main, aside {
+        width: auto;
+        float: none;
+    }
+
+    main {
+        padding-bottom: 1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    aside table {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #bio-section, #image-section {
+        float: none;
+        width: auto;
+    }
+
+    #bio, #quote {
+        margin: 0.5rem;
+    }
+
+    #contact-section h2 {
+        margin: 0;
+        padding-top: 1rem;
+    }
+
 }
